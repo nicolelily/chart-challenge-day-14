@@ -8,7 +8,7 @@ from plotly.graph_objs import Figure
 @st.cache
 def get_data():
     return pd.read_csv(
-        "/Users/nicolemark/Documents/data/charts2.csv")
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSzU-mcl6RIJjzLjSut1nNd1pN2QEjx-8L7gzAqM-d6n-kZb-dLDE-YbkjFxP65Wx_Eweaax901jrd3/pub?gid=1490223003&single=true&output=csv")
 
 
 df = get_data()
