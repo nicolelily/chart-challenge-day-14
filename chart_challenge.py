@@ -32,7 +32,7 @@ fig = px.scatter_3d(df, x="Number of charts used in production (last 6 months)",
 
 )
 
-st.markdown("Check out my [new website](https://www.nicoledesignsdata.com"))
+st.markdown("Check out my [new website](https://www.nicoledesignsdata.com")
 
 st.write("You know you want to click that button 👇🏼")
 btn = st.button("Celebrate!")
