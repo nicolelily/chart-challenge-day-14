@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from plotly.graph_objs import Figure
-rom PIL import Image
+from PIL import Image
 
 @st.cache
 def get_data():
