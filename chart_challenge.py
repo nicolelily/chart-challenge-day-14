@@ -17,11 +17,9 @@ st.title("📊 #30DayChartChallenge 2022 Day 14: 3 dimensional 📈")
 st.markdown(
     "I could have shared a static image only, but then y'all wouldn't have seen the super cool interactivity of Plotly Express's 3-D scatterplot. \n"
     "You can zoom in, out, pan around the view, and see each mark from all angles. Hover to view tooltips. \n"
-    "This data is from the 2021 Data Visualization Society State of the Industry Survey. Learn more and see the full dataset (here)[https://www.datavisualizationsociety.org/survey]"
-
+    "This data is from the 2021 Data Visualization Society State of the Industry Survey. Learn more and see the full dataset [here](https://www.datavisualizationsociety.org/survey)"
 
 image = Image.open('DVSlogo.png')
-
 st.image(image, width =500, use_column_width=False)
 
 
@@ -36,7 +34,7 @@ fig = px.scatter_3d(df, x="Number of charts used in production (last 6 months)",
 
 st.write(fig)
 
-st.markdown("Check out my [new website](https://www.nicoledesignsdata.com)")
+st.markdown("Check out my [new website](https://www.nicoledesignsdata.com)!")
 
 st.write("You know you want to click that button 👇🏼")
 btn = st.button("Celebrate!")
