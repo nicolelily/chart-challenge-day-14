@@ -30,8 +30,6 @@ fig = px.scatter_3d(df, x="Number of charts used in production (last 6 months)",
                      "Number of channels used for sharing visualizations": "Number of channels"}, color_continuous_scale = "darkmint",
                    title="The number of tools, chart types, and channels for sharing used by data visualization practitioners")
 
-
-fig.show()
 )
 
 st.markdown("Check out my [new website](https://www.nicoledesignsdata.com"))
