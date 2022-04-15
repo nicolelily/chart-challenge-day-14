@@ -21,6 +21,7 @@ st.markdown(
 
 
 image = Image.open('DVSlogo.png')
+
 st.image(image, width =500, use_column_width=False)
 
 
