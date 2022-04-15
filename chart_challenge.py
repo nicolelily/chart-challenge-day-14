@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from plotly.graph_objs import Figure
-
+rom PIL import Image
 
 @st.cache
 def get_data():
@@ -18,6 +18,11 @@ st.markdown(
     "I could have shared a static image only, but then y'all wouldn't have seen the super cool interactivity of Plotly Express's 3-D scatterplot. \n"
     "You can zoom in, out, pan around the view, and see each mark from all angles. Hover to view tooltips. \n"
     "This data is from the 2021 Data Visualization Society State of the Industry Survey.")
+
+
+image = Image.open('DVSlogo.png')
+st.image(image)
+
 
 st.markdown(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
 
