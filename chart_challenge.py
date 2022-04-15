@@ -18,7 +18,7 @@ st.markdown(
     "I could have shared a static image only, but then y'all wouldn't have seen the super cool interactivity of Plotly Express's 3-D scatterplot. \n"
     "You can zoom in, out, pan around the view, and see each mark from all angles. Hover to view tooltips. \n"
     "This data is from the 2021 Data Visualization Society State of the Industry Survey. Learn more and see the full \n"
-    "dataset [here](https://www.datavisualizationsociety.org/survey)"
+    "dataset [here](https://www.datavisualizationsociety.org/survey).")
 
 st.subheader(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
 
