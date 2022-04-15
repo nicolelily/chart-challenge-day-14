@@ -20,11 +20,10 @@ st.markdown(
     "This data is from the 2021 Data Visualization Society State of the Industry Survey. Learn more and see the full \n"
     "dataset [here](https://www.datavisualizationsociety.org/survey)"
 
+st.subheader(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
+
 image = Image.open('DVSlogo.png')
 st.image(image, width =500, use_column_width=False)
-
-
-st.subheader(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
 
 fig = px.scatter_3d(df, x="Number of charts used in production (last 6 months)", y='Number of data visualization tools', z='Number of channels used for sharing visualizations',
               color="Number of charts used in production (last 6 months)", labels={
