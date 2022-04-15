@@ -174,7 +174,7 @@ showPyplotGlobalUse = true
 base = "light"
 
 # Primary accent color for interactive elements.
-primaryColor = "#A9DDD6"
+# primaryColor = "#A9DDD6"
 
 # Background color for the main content area.
 #backgroundColor =
