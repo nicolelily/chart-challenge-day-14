@@ -21,7 +21,7 @@ st.markdown(
 
 
 image = Image.open('DVSlogo.png')
-st.image(image, width =750, use_column_width=False)
+st.image(image, width =500, use_column_width=False)
 
 
 st.markdown(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
