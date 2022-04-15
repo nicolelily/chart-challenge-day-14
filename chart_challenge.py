@@ -9,14 +9,14 @@ from plotly.graph_objs import Figure
 @st.cache
 def get_data():
     return pd.read_csv(
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRV48XxyP4ipyXu79PV_XpmshMSXPCBWAq9yX_hewG-BRb14Tesu4nylUCUEYLlyDeLOUsZpA228m6T/pub?gid=298041788&single=true&output=csv")
+        "/Users/nicolemark/Documents/data/charts2.csv")
 
 
 df = get_data()
 
 st.title("📊 #30DayChartChallenge 2022 Day 14: 3 dimensional 📈")
 st.markdown(
-    "I could've shared a static image only, but then y'all wouldn't have seen the super cool interactivity of Plotly Express's 3-D scatterplot. You can zoom in, out, pan around the view, and see each mark from all angles. Hover to view tooltips. \n
+    "I could have shared a static image only, but then y'all wouldn't have seen the super cool interactivity of Plotly Express's 3-D scatterplot. You can zoom in, out, pan around the view, and see each mark from all angles. Hover to view tooltips. \n
     This data is from the '2021' Data Visualization Society State of the Industry Survey.")
 
 st.markdown(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization"\n\n—John Tukey")
