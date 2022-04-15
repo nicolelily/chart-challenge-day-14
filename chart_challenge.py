@@ -20,7 +20,7 @@ st.markdown(
     "This data is from the 2021 Data Visualization Society State of the Industry Survey.")
 
 
-image = Image.open('DVSlogo.png', width =100, use_column_width=False)
+image = Image.open('DVSlogo.png', width =750, use_column_width=False)
 st.image(image)
 
 
