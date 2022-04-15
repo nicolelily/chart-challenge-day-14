@@ -5,6 +5,7 @@ import streamlit as st
 from plotly.graph_objs import Figure
 from PIL import Image
 
+st.set_page_config(layout="wide")
 @st.cache
 def get_data():
     return pd.read_csv(
