@@ -25,7 +25,7 @@ image = Image.open('DVSlogo.png')
 st.image(image, width =500, use_column_width=False)
 
 
-st.markdown(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
+st.subheader(">This is my favorite part about analytics: Taking boring flat data and bringing it to life through visualization \n\n—John Tukey")
 
 fig = px.scatter_3d(df, x="Number of charts used in production (last 6 months)", y='Number of data visualization tools', z='Number of channels used for sharing visualizations',
               color="Number of charts used in production (last 6 months)", labels={
