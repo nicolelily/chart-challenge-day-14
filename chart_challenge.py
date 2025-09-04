@@ -7,7 +7,27 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def get_data():
-    return pd.read_csv("dvs_survey_data.csv")
+    try:
+        # Try to read the local CSV file
+        df = pd.read_csv("dvs_survey_data.csv")
+        st.success("✅ Data loaded successfully from local CSV file")
+        return df
+    except FileNotFoundError:
+        st.error("❌ CSV file not found. Please check the file path.")
+        # Fallback to empty dataframe
+        return pd.DataFrame({
+            "Number of charts used in production (last 6 months)": [0],
+            "Number of data visualization tools": [0], 
+            "Number of channels used for sharing visualizations": [0]
+        })
+    except Exception as e:
+        st.error(f"❌ Error loading data: {str(e)}")
+        # Fallback to empty dataframe
+        return pd.DataFrame({
+            "Number of charts used in production (last 6 months)": [0],
+            "Number of data visualization tools": [0],
+            "Number of channels used for sharing visualizations": [0]
+        })
 
 
 df = get_data()
