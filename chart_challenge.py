@@ -1,12 +1,10 @@
-from typing import Union, Any
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from plotly.graph_objs import Figure
 from PIL import Image
 
 st.set_page_config(layout="wide")
-@st.cache
+@st.cache_data
 def get_data():
     return pd.read_csv(
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vSzU-mcl6RIJjzLjSut1nNd1pN2QEjx-8L7gzAqM-d6n-kZb-dLDE-YbkjFxP65Wx_Eweaax901jrd3/pub?gid=1490223003&single=true&output=csv")
